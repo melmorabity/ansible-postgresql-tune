@@ -143,7 +143,7 @@ def format_size(size):
         value = size
         unit = 'kB'
 
-    return '{}{}'.format(value, unit)
+    return '{}{}'.format(int(value), unit)
 
 
 def get_pgtune_config(module):
